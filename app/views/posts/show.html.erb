@@ -1,0 +1,6 @@
+show page
+
+<p><%= @post.title %></p>
+<p><%= @post.body %></p>
+<p>submitted <%= time_ago_in_words(@post.created_at) %> ago</p>
+<p>updated <%= time_ago_in_words(@post.updated_at) %> ago</p>

@@ -1,0 +1,7 @@
+
+<%= @posts.each do |post| %>
+  <p>post title: <%= post.title %></p>
+  <p>post body: <%= post.body %></p>
+  <p>submitted: <%= time_ago_in_words(post.created_at) %> ago</p>
+  <p>updated: <%= time_ago_in_words(post.updated_at) %> ago</p>
+<% end %>
